@@ -1,15 +1,11 @@
 # Installation d'un serveur LAMP Debian
 
-### LAMP = Linux Apache MariaDB PHP
-
-  - [Installer Apache 2](#installer-apache-2)
-  - [Installer MariaDB](#installer-mariadb)
 - [Installation d'un serveur LAMP Debian](#installation-dun-serveur-lamp-debian)
-    - [LAMP = Linux Apache MariaDB PHP](#lamp--linux-apache-mariadb-php)
   - [Installer Apache 2](#installer-apache-2)
   - [Installer MariaDB](#installer-mariadb)
-- [Installer PHP](#installer-php)
-- [Tester PHP sur Apache](#tester-php-sur-apache)
+  - [Installer PHP](#installer-php)
+  - [Tester PHP sur Apache](#tester-php-sur-apache)
+
 
 ## Installer Apache 2
 `# apt install apache2`
@@ -45,7 +41,7 @@ Véfier si l'utilisateur peut se logger et voir la base de données:
     MariaDB [(none)]> SHOW DATABASES;
 ![5](5.png)
 
-# Installer PHP
+## Installer PHP
 
 `# apt install php libapache2-mod-php php-mysql`
 
@@ -54,7 +50,7 @@ Redémarrer Apache:
 `# systemctl status apache2`
 
 
-# Tester PHP sur Apache
+## Tester PHP sur Apache
 
 `# nano /var/www/html/info.php`
 ![7](7.png)
