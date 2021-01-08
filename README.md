@@ -1,8 +1,17 @@
 # Installation d'un serveur LAMP Debian
 
-Linux Apache MariaDB PHP
+### LAMP = Linux Apache MariaDB PHP
 
-## Installer Apache2:
+  - [Installer Apache 2](#installer-apache-2)
+  - [Installer MariaDB](#installer-mariadb)
+- [Installation d'un serveur LAMP Debian](#installation-dun-serveur-lamp-debian)
+    - [LAMP = Linux Apache MariaDB PHP](#lamp--linux-apache-mariadb-php)
+  - [Installer Apache 2](#installer-apache-2)
+  - [Installer MariaDB](#installer-mariadb)
+- [Installer PHP](#installer-php)
+- [Tester PHP sur Apache](#tester-php-sur-apache)
+
+## Installer Apache 2
 `# apt install apache2`
 
 Vérifier si le service Apache est en train de tourner:  
@@ -45,7 +54,7 @@ Redémarrer Apache:
 `# systemctl status apache2`
 
 
-# Tester PHP sur Apache:
+# Tester PHP sur Apache
 
 `# nano /var/www/html/info.php`
 ![7](7.png)
