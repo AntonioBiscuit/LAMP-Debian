@@ -7,8 +7,10 @@ Linux Apache MariaDB PHP
 
 Vérifier si le service Apache est en train de tourner:  
 `# systemctl status apache2`
+![2](2.png)
 
 Sur un navigateur web, essayer de charger la page en utilisant l'IP du serveur.
+![9](9.png)
 
 ## Installer MariaDB
 
@@ -16,6 +18,7 @@ Sur un navigateur web, essayer de charger la page en utilisant l'IP du serveur.
 
 Pour s'assurer de la sécurité:  
 `# mysql_secure_installation`
+![3](3.png)
 
 Créer un utilisateur et une base de données:
 Se connecter à mysql en tant que root:  
@@ -25,12 +28,13 @@ Se connecter à mysql en tant que root:
     MariaDB [(none)]> GRANT ALL ON base_test.* TO 'antoine'@'localhost' IDENTIFIED BY 'password' WITH GRANT OPTION;
     MariaDB [(none)]> FLUSH PRIVILEGES;
     MariaDB [(none)]> exit;
+![4](4.png)
 
 Véfier si l'utilisateur peut se logger et voir la base de données:
 
     # mysql -u antoine -p
     MariaDB [(none)]> SHOW DATABASES;
-
+![5](5.png)
 
 # Installer PHP
 
@@ -44,9 +48,11 @@ Redémarrer Apache:
 # Tester PHP sur Apache:
 
 `# nano /var/www/html/info.php`
+![7](7.png)
 
 Charger la page sur un navigateur:  
 `http://SERVER_IP/info.php`
+![8](8.png)
 
-Supprimer le fichier par sécurité:  
+Enfin, supprimer le fichier par sécurité:  
 `# rm /var/www/html/info.php`
